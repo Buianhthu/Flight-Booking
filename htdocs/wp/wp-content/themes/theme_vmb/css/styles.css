@@ -2469,11 +2469,11 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-/*.btn-primary {
+.btn-primary {
   color: #fff;
   background-color: #fed136;
   border-color: #fed136;
-}*/
+}
 .btn-primary:hover {
   color: #fff;
   background-color: #fec810;
@@ -2965,6 +2965,12 @@ input[type=button].btn-block {
 .fade:not(.show) {
   opacity: 0;
 }
+.fade {
+  opacity: 1 !important;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
 
 .collapse:not(.show) {
   display: none;
@@ -3007,26 +3013,6 @@ input[type=button].btn-block {
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-}
-
-.dropdown-menu-1 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -5440,7 +5426,7 @@ a.close.disabled {
   }
 }
 .modal.show .modal-dialog {
-  transform: none;
+  transform: none !important;
 }
 .modal.modal-static .modal-dialog {
   transform: scale(1.02);
@@ -5488,16 +5474,16 @@ a.close.disabled {
 }
 
 .modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 60rem !important;
+  pointer-events: auto !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 0.3rem !important;
+  outline: 0 !important;
 }
 
 .modal-backdrop {
@@ -10160,7 +10146,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg-new.jpg");
+  background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10281,6 +10267,10 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
+}
+
+.portfolio-modal.modal.fade.show {
+  display: block !important;
 }
 
 .timeline {

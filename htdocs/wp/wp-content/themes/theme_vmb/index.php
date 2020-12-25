@@ -38,7 +38,7 @@
         	</div>
 		</div>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <!-- <section class="page-section" id="services">
             <div class="container">
                 <h2 class="text-center mt-0">At Your Service</h2>
                 <hr class="divider my-4" />
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Portfolio-->
         <!-- <div id="portfolio">
             <div class="container-fluid p-0">
@@ -137,14 +137,14 @@
         </div> -->
         <?php include_once('post.php'); ?>
         <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
+        <!-- <section class="page-section bg-dark text-white">
             <div class="container text-center">
                 <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
                 <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
             </div>
-        </section>
+        </section> -->
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <!-- <section class="page-section" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -160,11 +160,10 @@
                     </div>
                     <div class="col-lg-4 mr-auto text-center">
                         <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                       
                         <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         
-<?php get_footer(); ?>

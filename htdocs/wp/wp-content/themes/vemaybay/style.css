@@ -1,0 +1,141 @@
+/*
+ * |---:[Đoạn này sẽ chứa các đoạn giới thiệu và thông tin về theme, như tên theme (Theme Name), tên tác giả (Theme Author), địa chỉ của tác giả (Author URI),...]:---|
+ 
+ * Theme Name: ThachPham Theme
+ * Description: Đây là một theme đơn giản để thực hành <a href="https://thachpham.com/series/lap-trinh-theme-wordpress" data-wpel-link="internal">Lập trình theme WordPress</a>
+ * Theme URI: https://thachpham.com/serie/lap-trinh-theme-wordpress
+ * Version: 1.0
+ * Theme Author: ThachPham
+ * Author URI: https://thachpham.com
+ * Tags: starter theme, framework theme, two-columns, customize
+ * Text-domain: thachpham
+ */
+
+ /* Theme Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.subheader {
+    height: 34px;
+    background: #1ba0e1;
+    padding: 0 0px 0 15px;
+    line-height: 34px;
+}
+
+.fr {
+    float: right;
+}
+
+.subheader h1 {
+    font-size: 11px;
+    margin: 0;
+    height: 34px;
+    line-height: 34px;
+}
+
+.subheader h1>a {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.menu-header {
+    height: 60px;
+    background-color: #ffffff;
+    padding: 0 15px;
+}
+
+.visible-lg, .visible-md, .visible-sm, .visible-xs {
+    display: none!important;
+}
+
+a {
+    color: #1ba0e1;
+    text-decoration: none;
+}
+
+a.hotline-num, .list-menu-mb ul>li a {
+    text-decoration: none !important;
+}
+
+a.hotline-num {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 53px;
+    z-index: 100;
+}
+
+.visible-lg, .visible-md, .visible-sm, .visible-xs {
+    display: none!important;
+}
+
+#menu {
+    margin-bottom: 0;
+    height: 60px;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+#menu > li {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+.list-inline>li.li-logo {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+@media (min-width: 992px)
+.left-menu {
+    position: absolute;
+}
+
+.list-menu-top.list-inline {
+    padding-right: 10px;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.list-inline>li {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.list-menu-top li a {
+    color: #ffffff;
+}
+
+.list-inline>li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1015px)
+.container {
+    width: 982px;
+    padding-left: 0;
+    padding-right: 0;
+}

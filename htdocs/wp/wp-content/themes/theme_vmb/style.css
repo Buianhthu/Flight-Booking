@@ -562,13 +562,20 @@ label {
 	width: 30rem;
 }
 
-.box-select-option, .dropdown-menu, .show{
+/*.dropdown.show.box-diem{
+    top: 10rem;
+    width:30rem;
+}*/
+
+.box-select-option, .dropdown-menu,{
 	transform: translate3d(0px, 0px, 0px) !important;
 	z-index: 5;
 }
 
 .dropdown-menu.show {
-    top: 5rem !important;
+    top: 20rem !important;
+    width:40rem !important;
+
 }
 
 .btn-secondary.dropdown-toggle {
@@ -669,271 +676,58 @@ ul, li {
     margin-left: 100px !important;
 }
 
-/* Post */
-.page-section {
-    padding: 6rem 0;
+#from-container {
+    display: hidden !important;
 }
 
-.bg-light {
-    background-color: #f8f9fa !important;
+/*Post*/
+.img_post {
+  max-width:100%;
+  height:150px;
+  background-size: cover!important;
+  background-color: none !important;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+/* Thông tin tìm kiếm */
+#info_search {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 14px;
 }
 
-@media (min-width: 1200px)
-.container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+#info_search span{
+    font-size: 16px;
+    font-weight: bold;
 }
 
-@media (min-width: 992px)
-.container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+#info_search h4{
+    color: red;
+    text-align: center;
 }
-@media (min-width: 768px)
-.container-md, .container-sm, .container {
-    max-width: 720px;
-}
-@media (min-width: 576px)
-.container-sm, .container {
-    max-width: 540px;
-}
-@media (min-width: 1200px)
-.container {
-    max-width: 1140px;
-}
-@media (min-width: 992px)
-.container {
-    max-width: 960px;
-}
-@media (min-width: 768px)
-.container {
-    max-width: 720px;
-}
-@media (min-width: 576px)
-.container {
-    max-width: 540px;
-}
-.container {
+
+/* Chi tiết giá */
+.widgetblock-content .field-table {
     width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
 }
-.text-center {
-    text-align: center !important;
+
+/* FOOTER */
+.footer {
+    background-color: #1ba0e1;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.page-section h2.section-heading {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-.text-uppercase {
-    text-transform: uppercase !important;
-}
-#portfolio .portfolio-item .portfolio-link {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-a {
-    color: #fed136;
-    text-decoration: none;
-    background-color: transparent;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(254, 209, 54, 0.9);
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity ease-in-out 0.25s;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    font-size: 1.25rem;
+
+.footer a {
     color: white;
 }
-svg:not(:root).svg-inline--fa {
-    overflow: visible;
-}
-<style>
-.svg-inline--fa.fa-w-14 {
-    width: .875em;
-}
-<style>
-.fa-3x {
-    font-size: 3em;
-}
-.svg-inline--fa {
-    display: inline-block;
-    font-size: inherit;
-    height: 1em;
-    overflow: visible;
-    vertical-align: -.125em;
-}
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-#portfolio .portfolio-item .portfolio-caption {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #fff;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+
+.box-description-app {
+    margin: 0 auto;
     font-size: 1.5rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-    margin-bottom: 0;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-    font-style: italic;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.text-muted {
-    color: #6c757d !important;
-}
-Modal
-.fade:not(.show) {
-    opacity: 0;
-}
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    outline: 0;
-}
-.fade {
-    transition: opacity 0.15s linear;
-}
-.modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out;
-    transform: translate(0, -50px);
-}
-.portfolio-modal .modal-dialog {
-    margin: 1rem;
-    max-width: 100vw;
-}
-@media (min-width: 576px)
-.modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
-}
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 0.5rem;
-    pointer-events: none;
-}
-.portfolio-modal .modal-content {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    text-align: center;
-}
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0.3rem;
-    outline: 0;
-}
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    background-color: transparent;
-}
-.portfolio-modal .modal-content img {
-    margin-bottom: 2rem;
-}
-.justify-content-center {
-    justify-content: center !important;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
-}
-.modal-body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: 1rem;
-}
-.portfolio-modal .modal-content h2 {
-    font-size: 3rem;
-    line-height: 3rem;
-}
-.portfolio-modal .modal-content img {
-    margin-bottom: 2rem;
-}
-.ml-auto, .mx-auto {
-    margin-left: auto !important;
-}
-.mr-auto, .mx-auto {
-    margin-right: auto !important;
-}
-.d-block {
-    display: block !important;
-}
-.portfolio-modal .modal-content p {
-    margin-bottom: 2rem;
-    line-height: 1.75;
-    margin-top:0;
-}
-.portfolio-modal .modal-content ul.list-inline {
-    margin-bottom: 2rem;
-}
-.list-inline {
-    padding-left: 0;
-    list-style: none;
 }
 
-
-
-
-/*#menu .sub-menu {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #ffffff;
-    padding: 8px 16px;
-    min-width: 260px;
-    box-shadow: 0 0 3px #dddddd;
-    -webkit-box-shadow: 0 0 3px #dddddd;
-    -moz-box-shadow: 0 0 3px #dddddd;
-    display: none;
-}
-
-#menu > li {
-    position: relative;
-    height: 60px;
-    line-height: 60px;
-}
-
-#menu .sub-menu ul li {
-    line-height: 30px;
-    display: block;
-}*/
